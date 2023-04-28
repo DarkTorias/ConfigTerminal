@@ -1,0 +1,185 @@
+{
+  "files.associations": {
+    "*.twig": "html",
+    "*.js": "javascript",
+    "*.tpl": "smarty"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "html",
+    "smarty": "html",
+    "twig": "html"
+  },
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "workbench.editor.decorations.colors": true,
+  "eslint.debug": true,
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.run": "onSave",
+  "eslint.validate": [
+    "javascript"
+  ],
+  "workbench.iconTheme": "symbols",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontLigatures": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "intelephense.diagnostics.undefinedTypes": false,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "intelephense.diagnostics.languageConstraints": false,
+  "intelephense.diagnostics.undefinedClassConstants": false,
+  "intelephense.diagnostics.undefinedFunctions": false,
+  "intelephense.diagnostics.undefinedMethods": false,
+  "prettier.printWidth": 100,
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDelete": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.autoClosingBrackets": "always",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true
+    }
+  },
+  "editor.scrollbar.verticalScrollbarSize": 12,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.tabSize": 2,
+  "editor.guides.bracketPairs": true,
+  "intelephense.format.braces": "k&r",
+  "twig-language-2.indentStyle": "space",
+  "git.confirmSync": false,
+  "editor.hover.above": false,
+  "html.completion.attributeDefaultValue": "singlequotes",
+  "intelephense.diagnostics.undefinedConstants": false,
+  "editor.foldingMaximumRegions": 65000,
+  "editor.inlineSuggest.enabled": true,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[smarty]": {  
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.trimAutoWhitespace": false,
+    "editor.comments.ignoreEmptyLines": true
+  },
+  "settingsSync.ignoredSettings": [],
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#282c34",
+    "activityBar.foreground": "#02e2ff",
+    "badge.background": "#d88913",
+    "sideBar.background": "#282c34",
+    "sideBar.foreground": "#0ad6dd",
+    "statusBar.background": "#054f5c",
+    "statusBar.foreground": "#ffffff",
+    "tab.activeBackground": "#282c34",
+    "tab.activeBorder": "#0ad6dd",
+    "diffEditor.insertedTextBackground": "#14676dc7"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "italic bold font",
+        "scope": [
+          "*",
+          "keyword",
+          "storage",
+          "keyword.control",
+          "keyword.control.from",
+          "keyword.control.flow",
+          "keyword.operator.new",
+          "keyword.control.import",
+          "keyword.control.export",
+          "keyword.control.default",
+          "keyword.control.trycatch",
+          "keyword.control.conditional",
+          "storage.type",
+          "storage.type.class",
+          "storage.modifier.tsx",
+          "storage.type.function",
+          "storage.modifier.async",
+          "variable.language",
+          "variable.language.this",
+          "variable.language.super",
+          "meta.class",
+          "meta.var.expr",
+          "constant.language.null",
+          "variable.other.readwrite.js",
+          "meta.block.js",
+          "switch-block.expr.js",
+          "switch-statement.expr.js",
+          "meta.block.js",
+          "meta.arrow.js",
+          "source.js",
+          "meta.selector.css",
+          "source.css"
+        ],
+        "settings": {
+          "fontStyle": "italic bold"
+        }
+      },
+      {
+        "scope": "entity.other.attribute-name.class.css",
+        "settings": {
+          "foreground": "#ffbc7c"
+        }
+      },
+      {
+        "scope": "support.type.property-name.css",
+        "settings": {
+          "foreground": "#e7cfe2"
+        }
+      },
+      {
+        "scope": "entity.other.attribute-name.id.css",
+        "settings": {
+          "foreground": "#e76ff7"
+        }
+      }
+    ]
+  },
+  "workbench.preferredDarkColorTheme": "One Dark Pro",
+  "workbench.preferredHighContrastColorTheme": "One Dark Pro",
+  "workbench.preferredHighContrastLightColorTheme": "One Dark Pro",
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "One Dark Pro",
+  "editor.fontFamily": "'Cascadia Code PL', monospace",
+  "editor.letterSpacing": 0.5,
+  "oneDarkPro.bold": true,
+  "oneDarkPro.vivid": true,
+  "css.lint.duplicateProperties": "warning",
+  "editor.stickyScroll.enabled": true,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorWidth": 2,
+  "html.format.indentInnerHtml": true,
+  "phpfmt.indent_with_space": 2,
+  "phpfmt.psr1": true,
+  "phpfmt.psr2": false,
+  "phpfmt.psr1_naming": true,
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.startupEditor": "none",
+  "smarty.highlight": true,
+  "bashBeautify.tabSize": 2,
+  "phpfmt.detect_indent": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "symbols.hidesExplorerArrows": false,
+  "intelephense.format.enable": false,
+	"editor.accessibilitySupport": "off",
+  "editor.linkedEditing": true,
+  "[twig]": {
+    "editor.linkedEditing": true
+  },
+  "rapidapi.requests.timeout": 1000000,
+  "git.openRepositoryInParentFolders": "always",
+  "workbench.editorLargeFileConfirmation": 20
+}
