@@ -15,7 +15,7 @@
   "eslint.debug": true,
   "eslint.format.enable": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "eslint.run": "onSave",
   "eslint.validate": [
@@ -23,7 +23,7 @@
   ],
   "workbench.iconTheme": "symbols",
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "editor.fontLigatures": true,
   "[html]": {
@@ -181,5 +181,46 @@
   },
   "rapidapi.requests.timeout": 1000000,
   "git.openRepositoryInParentFolders": "always",
-  "workbench.editorLargeFileConfirmation": 20
+  "workbench.editorLargeFileConfirmation": 20,
+  "remote.SSH.remotePlatform": {
+    "20.71.40.59": "linux",
+    "SAM-MAGENTO-PROIN": "linux",
+    "sammagento-tpkolbi.westeurope.cloudapp.azure.com": "linux",
+    "sam-magento-tpkolbi.westeurope.cloudapp.azure.com": "linux",
+    "sam-magento-proin.westeurope.cloudapp.azure.com": "linux",
+    "192.168.88.200": "linux",
+    "sam-ramondin.westeurope.cloudapp.azure.com": "windows",
+    "sam-mage-tp-kolbi.westeurope.cloudapp.azure.com": "linux",
+    "sam-magento-kelme-jd.westeurope.cloudapp.azure.com": "linux",
+    "b2b-demo.westeurope.cloudapp.azure.com": "linux",
+    "sam-magento-tp-kolbi.westeurope.cloudapp.azure.com": "linux",
+    "sam-magento-gyemo.westeurope.cloudapp.azure.com": "linux",
+    "b2b-demomagento.aitanaoncloud.com": "linux",
+    "srvmagentokelme.westeurope.cloudapp.azure.com": "linux",
+    "b2b-conector.westeurope.cloudapp.azure.com": "linux"
+  },
+  "csv-preview.separator": ";",
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false
+  },
+  "testing.alwaysRevealTestOnStateChange": true,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "phpfmt.php_bin": "/usr/local/bin/php",
+  "workbench.activityBar.location": "top",
+  "workbench.tree.enableStickyScroll": true,
+  "yaml.schemas": {
+    "file:///home/administrador/.vscode-server/extensions/atlassian.atlascode-3.0.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "redhat.telemetry.enabled": true,
+  "atlascode.bitbucket.enabled": true,
+  "atlascode.jira.enabled": true,
+  "diffEditor.maxComputationTime": 0,
+  "codesnap.shutterAction": "copy"
 }
