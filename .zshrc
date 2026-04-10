@@ -1,8 +1,12 @@
+# Created by newuser for 5.8
 export ZSH="$HOME/.oh-my-zsh"
 source "lscolors.sh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
-plugins=(git)
+plugins=(
+  git
+  sudo
+)
 source $ZSH/oh-my-zsh.sh
 
 
@@ -51,7 +55,7 @@ zstyle ':completion:*' verbose true
 
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
-# source /home/darktorias/powerlevel10k/powerlevel10k.zsh-theme
+# source /home/juan/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
@@ -63,9 +67,9 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Plugins
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh-sudo/sudo.plugin.zsh
+source /home/juan/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/juan/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 
 # Functions
 function mkt(){
@@ -141,9 +145,9 @@ alias cat='batcat'
 alias ..="cd .."
 alias cod="code ."
 alias exp="explorer.exe ."
-alias npi="npm install"
-alias nrd="npm run dev"
-alias phoenix="rm -rf package-lock.json;rm -rf node_modules;npm install"
+alias npi="pnpm install"
+alias nrd="pnpm run dev"
+alias phoenix="rm -rf package-lock.json;rm -rf node_modules;pnpm install"
 
 #! Zone Custom Functions
 
@@ -152,26 +156,26 @@ function try(){
 }
 
 function cds(){
-  cd "/home/darktorias/Sitios"
+  cd "/home/juan/Proyectos"
 }
 function cdp () {
-  cd "/home/darktorias/Sitios/PHP_WEBS/$1"
+  cd "/home/juan/Proyectos/PHP_WEBS/$1"
 }
 function cdn () {
-  cd "/home/darktorias/Sitios/NODE_WEBS/$1"
+  cd "/home/juan/Proyectos/NODE_WEBS/$1"
 }
 function phps() {
   [[ $1 = '' ]] && a="8080" || a="$1"
   php -S localhost:$a
 }
 function npi() {
-  npm install $1
+  pnpm install $1
 }
 function npd() {
-  npm uninstall $1
+  pnpm uninstall $1
 }
 function nr() {
-  npm run $1
+  pnpm run $1
 }
 function mk() {
   if [[ $# > 1 ]]; then
@@ -202,3 +206,14 @@ function ggc(){
 function ggpom(){
   git push $1 origin master
 }
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# pnpm
+export PNPM_HOME="/home/juan/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
