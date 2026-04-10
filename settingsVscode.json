@@ -14,9 +14,6 @@
   "workbench.editor.decorations.colors": true,
   "eslint.debug": true,
   "eslint.format.enable": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  },
   "eslint.run": "onSave",
   "eslint.validate": [
     "javascript"
@@ -27,7 +24,7 @@
   },
   "editor.fontLigatures": true,
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "intelephense.diagnostics.undefinedTypes": false,
   "prettier.semi": false,
@@ -62,7 +59,7 @@
   "editor.inlineSuggest.enabled": true,
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.css-language-features"
   },
   "[smarty]": {  
     "editor.tabSize": 2,
@@ -197,7 +194,16 @@
     "sam-magento-gyemo.westeurope.cloudapp.azure.com": "linux",
     "b2b-demomagento.aitanaoncloud.com": "linux",
     "srvmagentokelme.westeurope.cloudapp.azure.com": "linux",
-    "b2b-conector.westeurope.cloudapp.azure.com": "linux"
+    "b2b-conector.westeurope.cloudapp.azure.com": "linux",
+    "Quimialmel": "linux",
+    "127.0.0.1": "linux",
+    "GrassRoots": "linux",
+    "sammagento-tp-orihuela.westeurope.cloudapp.azure.com": "linux",
+    "b2b-fosterfood.westeurope.cloudapp.azure.com": "linux",
+    "192.168.88.100": "linux",
+    "FosterPre": "linux",
+    "AcrossLogistics": "linux",
+    "FosterPro": "linux"
   },
   "csv-preview.separator": ";",
   "[csharp]": {
@@ -215,12 +221,34 @@
   "phpfmt.php_bin": "/usr/local/bin/php",
   "workbench.activityBar.location": "top",
   "workbench.tree.enableStickyScroll": true,
-  "yaml.schemas": {
-    "file:///home/administrador/.vscode-server/extensions/atlassian.atlascode-3.0.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
   "redhat.telemetry.enabled": true,
   "atlascode.bitbucket.enabled": true,
-  "atlascode.jira.enabled": true,
+  "atlascode.jira.enabled": false,
   "diffEditor.maxComputationTime": 0,
-  "codesnap.shutterAction": "copy"
+  "codesnap.shutterAction": "copy",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "scm.experimental.showHistoryGraph": true,
+  "csv-edit.initiallyFixedRowsTop": 1,
+  "php.inlayHints.types.return": false,
+  "php.inlayHints.types.lambdaParameter": false,
+  "php.inlayHints.parameters.enabled": false,
+  "php.inlayHints.parameters.byReference": false,
+  "php.inlayHints.insertOnDoubleClick": false,
+  "editor.inlayHints.enabled": "off",
+  "php.format.rules.indentBraces": true,
+  "php.format.rules.spaceBeforeParenthesesInArrowFunctions": false,
+  "php.format.codeStyle": "Laravel",
+  "docker.extension.dockerEngineAvailabilityPrompt": false,
+  "geminicodeassist.project": "prueba-422114",
+  "chat.mcp.gallery.enabled": true,
+  "chat.mcp.serverSampling": {
+    "Global in Code: makenotion/notion-mcp-server": {
+      "allowedModels": [
+        "copilot/gpt-4.1"
+      ]
+    }
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "remote.autoForwardPortsSource": "hybrid"
 }
