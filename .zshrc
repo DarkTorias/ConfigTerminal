@@ -177,6 +177,10 @@ function npd() {
 function nr() {
   pnpm run $1
 }
+function dockerSR() {
+  docker ps -aq | xargs -r docker stop
+  docker ps -aq | xargs -r docker rm
+}
 function mk() {
   if [[ $# > 1 ]]; then
     for i in $*; do
